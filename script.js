@@ -18,24 +18,38 @@ function playerPlay(){
 }
 
 
+//var computer = computerPlay();
+//var player = playerPlay();
+let playerCounter = 0;
+let computerCounter = 0;
+let tieCounter = 0;
 
-let computer = computerPlay();
-let player = playerPlay();
-
-console.log(player, computer);
 
 function game(C, P){
+    
+
     if (C === P) {
-        alert( "It's a TIE between " + player + "s");
+        alert( "It's a TIE between " + P + "s");
+        tieCounter ++;
     } else if((C === "rock" && P === "scissor") || (C=== "paper" && P === "rock") || (C === "scissor" && P === "paper")) {
-        alert("You LOSE, " + computer + " beats " + player);
+        alert("You LOSE, " + C + " beats " + P);
+        computerCounter ++;
         
     } else {
-        alert("You WIN, " + player + " beats " + computer + " !");
+        alert("You WIN, " + P + " beats " + C + " !");
+        playerCounter ++;
     } 
-        
+        console.log("Player " + playerCounter + " - " + "Computer " + computerCounter);
 }
-game(computer, player);
+game(computerPlay(),playerPlay());
+game(computerPlay(),playerPlay());
+game(computerPlay(),playerPlay());
+game(computerPlay(),playerPlay());
+game(computerPlay(),playerPlay());
+
+
+
+
 
 
 /*
