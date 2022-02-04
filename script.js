@@ -6,15 +6,18 @@ function computerPlay(){
 }
 
 function playerPlay(){
-    let choice = window.prompt("Rock, Paper or Scissors?");
-    let playerChoice = choice.toLowerCase();
+    var choice = window.prompt("Rock, Paper or Scissors?");
+    var playerChoice = choice.toLowerCase();
+    console.log(playerChoice);
     if (playerChoice ==="rock" || playerChoice ==="paper" || playerChoice ==="scissor"){
-        return playerChoice;
+        return playerChoice;        
         } else{
         alert("Choice not valid!");
-        playerPlay();
+        return playerPlay();            
+
     };
     
+
 }
 
 
