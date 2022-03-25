@@ -5,7 +5,7 @@ function computerPlay(){
     return random;
 }
 
-function playerPlay(){
+/*function playerPlay(){
     var choice = window.prompt("Rock, Paper or Scissors?");
     var playerChoice = choice.toLowerCase();
     console.log(playerChoice);
@@ -18,7 +18,7 @@ function playerPlay(){
     };
     
 
-}
+}*/
 
 
 //var computer = computerPlay();
@@ -44,18 +44,10 @@ function game(C, P){
     } 
         console.log("Player " + playerCounter + " - " + "Computer " + computerCounter);
 }
-game(computerPlay(),playerPlay());
-game(computerPlay(),playerPlay());
-game(computerPlay(),playerPlay());
-game(computerPlay(),playerPlay());
-game(computerPlay(),playerPlay());
-
-
-
-
 
 
 /*
+
 (player === "rock" && computer === "scissor")
 next steps
 compare return values
@@ -67,3 +59,6 @@ if else
 
 
 */
+
+
+
