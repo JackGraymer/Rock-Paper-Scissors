@@ -60,5 +60,11 @@ if else
 
 */
 
+var rock = document.querySelectorAll('.card')
+rock.addEventListener("click", click);
 
+function click () {
+    console.log('Clicked ' + this.id);
+    return this.id
+}
 

@@ -5,11 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6793/6793733.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <script src="script.js"></script>
-    <h1>Welcome to Rock Paper Scissor!</h1>
+    <main class="container main">
+        <!-- Left sidebar -->
+        <div class="container left player">
+            <h1> Player</h1>
+            <div class="cards">
+                <div id="rock" class="card">
+                    <h2> Rock </h2>
+                    <div class="img"><img src="rock.png" alt="rock"></div>
+                </div>
+                <div id="paper" class="card">
+                    <h2> Paper </h2>
+                    <div class="img"><img src="paper.png" alt="paper"></div>
+                </div>
+                <div id="scissor" class="card">
+                    <h2> Scissors </h2>
+                    <div class="img"><img src="scissor.png" alt="scissor"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="container middle">
+            <h1> Match </h1>
+        </div>
+
+        <!-- Right sidebar -->
+        <div class="container right computer">
+            <h1>Computer</h1>
+            <div class="cards">
+                <div class="card">
+                    <h2>Secret</h2>
+                    <div class="img"><img src="question.png" alt="question mark"></div>
+            </div>  
+        </div>
+    </main>
 
 </body>
 </html>

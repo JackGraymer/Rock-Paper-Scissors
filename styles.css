@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+        
+}
+
+html {
+    display: flex;
+    height: 90%;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%;      
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5em;
+    border: 2pt solid grey;
+    background-color: rgb(179, 182, 185);
+    margin: 1%;
+    
+}
+
+.main {
+    /* Take the remaining height */
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+        /* Layout the left sidebar, main content and right sidebar */
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background-color: aqua;
+    width: 15%;
+    padding-bottom: 1%;
+    display:flex;
+    max-height: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;    
+    flex-grow: 1;
+    max-height: 100%;
+    justify-content: space-evenly;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 30%;
+    margin: 2.5% 5%;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4em;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: rgb(250, 250, 250) 0.2em solid;
+    transition: 200ms;
+    cursor:pointer;
+   }
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5%;
+    max-width: 100%;
+    max-height:3cm;
+}
+   
+   .card:hover {
+    border: #006fff 0.2em solid;
+    transform: scale(108%);
+    transition: 100ms;
+        
+   }
+
+   .card:active{
+       background-color: rgba(44, 93, 199, 0.774);
+       transition: 100ms;
+       cursor: grabbing;
+   }
+
+
+.middle {
+    /* Take the remaining width */
+    flex-grow: 1;
+    background-color: rgb(173, 223, 57);
+    margin: 1% 0;
+}
+
+.right {
+    width: 15%;
+    background-color: rgb(204, 97, 65);
+}
