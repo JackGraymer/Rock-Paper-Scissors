@@ -34,13 +34,36 @@
         <!-- Main content -->
         <div class="container middle">
             <h1> Match </h1>
+            <div class="scores space">
+                <h2>Scores</h2>
+                <div class="score">
+                    <div><h3>Player</h3><h1 id="playerScore">0</h1></div>
+                    <div><h3>Computer</h3><h1 id="computerScore">0</h1></div>
+                </div>
+            </div>
+            <div class="matchArea space">
+                <div class="field">
+                    <div id="player" class="fieldCard">
+                        <h2> Player </h2>
+                        <div class="img"><img src="question.png" alt="question"></div>
+                    </div>
+                    <div id="computer" class="fieldCard">
+                        <h2> Computer </h2>
+                        <div class="img"><img src="question.png" alt="question"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="console space"> History
+                <div id="history"></div>
+            </div>
+
         </div>
 
         <!-- Right sidebar -->
         <div class="container right computer">
             <h1>Computer</h1>
             <div class="cards">
-                <div class="card">
+                <div id ="secret" class="secret">
                     <h2>Secret</h2>
                     <div class="img"><img src="question.png" alt="question mark"></div>
             </div>  
